@@ -55,7 +55,7 @@ Tex to JATS:
 Ref <xref alt="[eq:sample]" rid="eqU003Asample">[eq:sample]</xref>.</p>
 ```
 
-Markdown to JATS Publishing:
+Markdown to JATS:
 
 ```xml
 <p><styled-content id="eqU003Asample"><disp-formula><alternatives>
