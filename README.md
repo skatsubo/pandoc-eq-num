@@ -47,7 +47,7 @@ pandoc --verbose basic.md -s -F pandoc-crossref -M autoEqnLabels=true -t native 
 
 Tex to native:
 
-```h
+```haskell
 [ Para
   [ Span
       ( "" , [] , [] )
@@ -85,7 +85,7 @@ Tex to native:
 ```
 
 Markdown to native:
-```h
+```haskell
 [ Para
   [ Span
       ( "eq:sample" , [] , [] )
