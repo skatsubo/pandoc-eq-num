@@ -19,9 +19,7 @@ Tex to HTML:
 
 ```html
 <p><span><span
-
 class="math display"><em>y</em> = <em>F</em>(<em>x</em>)   (1)</span></span></p>
-
 <p>Eqref <a href="#eq:sample" data-reference-type="eqref"
 data-reference="eq:sample">[eq:sample]</a>. Ref <a href="#eq:sample"
 data-reference-type="ref"
