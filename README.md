@@ -11,8 +11,8 @@ Convert 2 minimal samples `basic.tex` and `basic.md` to various formats and comp
 ### HTML: pandoc-crossref, autoEqnLabels.
 
 ```sh
-pandoc --verbose basic.tex -s -F pandoc-crossref -M autoEqnLabels=true -o basic-tex.html
-pandoc --verbose basic.md -s -F pandoc-crossref -M autoEqnLabels=true -o basic-md.html
+pandoc --verbose basic.tex -s -F pandoc-crossref -M autoEqnLabels -o basic-tex.html
+pandoc --verbose basic.md -s -F pandoc-crossref -M autoEqnLabels -o basic-md.html
 ```
 
 Tex to HTML:
@@ -39,8 +39,8 @@ class="math display"><em>y</em> = <em>F</em>(<em>x</em>)   (1)</span><
 ### Native: pandoc-crossref, autoEqnLabels.
 
 ```sh
-pandoc --verbose basic.tex -s -F pandoc-crossref -M autoEqnLabels=true -t native -o basic-tex.hs
-pandoc --verbose basic.md -s -F pandoc-crossref -M autoEqnLabels=true -t native -o basic-md.hs
+pandoc --verbose basic.tex -s -F pandoc-crossref -M autoEqnLabels -t native -o basic-tex.hs
+pandoc --verbose basic.md -s -F pandoc-crossref -M autoEqnLabels -t native -o basic-md.hs
 ```
 
 Tex to native:
