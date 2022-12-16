@@ -1,2 +1,3 @@
 # pandoc-eq-num
-Numbering equations with Pandoc
+
+Numbering equations with Pandoc - experiments.
