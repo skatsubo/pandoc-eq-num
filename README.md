@@ -49,9 +49,6 @@ Convert to JATS Publishing.
 ```sh
 pandoc -F pandoc-crossref -M autoEqnLabels basic.tex -t jats_articleauthoring -o basic-tex-jats-pub.xml
 pandoc -F pandoc-crossref -M autoEqnLabels basic.md -t jats_articleauthoring -o basic-md-jats-pub.xml
-
-pandoc -F pandoc-crossref -M autoEqnLabels basic.tex -t jats_archiving -o basic-tex-jats-arch.xml
-pandoc -F pandoc-crossref -M autoEqnLabels basic.md -t jats_archiving -o basic-md-jats-arch.xml
 ```
 
 Tex to JATS Publishing:
