@@ -40,14 +40,19 @@ class="math display"><em>y</em> = <em>F</em>(<em>x</em>)   (1)</span><
 
 ### JATS: pandoc-crossref, autoEqnLabels.
 
+#### JATS Publishing
+
 Convert to JATS Publishing.
 
 ```sh
-pandoc -F pandoc-crossref -M autoEqnLabels basic.tex -t jats_publishing -o basic-tex-jats-pub.xml
-pandoc -F pandoc-crossref -M autoEqnLabels basic.md -t jats_publishing -o basic-md-jats-pub.xml
+pandoc -F pandoc-crossref -M autoEqnLabels basic.tex -t jats_articleauthoring -o basic-tex-jats-pub.xml
+pandoc -F pandoc-crossref -M autoEqnLabels basic.md -t jats_articleauthoring -o basic-md-jats-pub.xml
+
+pandoc -F pandoc-crossref -M autoEqnLabels basic.tex -t jats_archiving -o basic-tex-jats-arch.xml
+pandoc -F pandoc-crossref -M autoEqnLabels basic.md -t jats_archiving -o basic-md-jats-arch.xml
 ```
 
-Tex to JATS:
+Tex to JATS Publishing:
 
 ```xml
 <p><disp-formula><alternatives>
@@ -57,12 +62,36 @@ Tex to JATS:
 <xref alt="[eq:sample]" rid="eqU003Asample">[eq:sample]</xref>.</p>
 ```
 
-Markdown to JATS:
+Markdown to JATS Publishing:
 
 ```xml
 <p><styled-content id="eqU003Asample"><disp-formula><alternatives>
 <tex-math><![CDATA[y = F(x)\qquad{(1)}]]></tex-math>
 <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>y</mml:mi><mml:mo>=</mml:mo><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
+<p>Ref to eq. 1.</p>
+```
+
+#### JATS Article Authoring
+
+Convert to JATS Publishing.
+
+```sh
+pandoc -F pandoc-crossref -M autoEqnLabels basic.tex -t jats_articleauthoring -o basic-tex-jats-auth.xml
+pandoc -F pandoc-crossref -M autoEqnLabels basic.md -t jats_articleauthoring -o basic-md-jats-auth.xml
+```
+
+Tex to JATS Article Authoring:
+
+```xml
+<p><disp-formula><mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>y</mml:mi><mml:mo>=</mml:mo><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+<p>Ref to
+<xref alt="[eq:sample]" rid="eqU003Asample">[eq:sample]</xref>.</p>
+```
+
+Markdown to JATS Article Authoring:
+
+```xml
+<p><styled-content id="eqU003Asample"><disp-formula><mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>y</mml:mi><mml:mo>=</mml:mo><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula></styled-content></p>
 <p>Ref to eq. 1.</p>
 ```
 
@@ -104,6 +133,7 @@ Tex to native:
 ```
 
 Markdown to native:
+
 ```haskell
 [ Para
     [ Span
