@@ -10,6 +10,8 @@ Convert 2 minimal samples `basic.tex` and `basic.md` to various formats and comp
 
 Note. For brewity we omit `--standalone` or `--verbose` pandoc flags.
 
+Note. This section deliberately does not cover html + mathjax.
+
 
 
 ### HTML: pandoc-crossref, autoEqnLabels.
