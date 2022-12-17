@@ -47,8 +47,8 @@ class="math display"><em>y</em> = <em>F</em>(<em>x</em>)   (1)</span><
 Convert to JATS Publishing.
 
 ```sh
-pandoc -F pandoc-crossref -M autoEqnLabels basic.tex -t jats_articleauthoring -o basic-tex-jats-pub.xml
-pandoc -F pandoc-crossref -M autoEqnLabels basic.md -t jats_articleauthoring -o basic-md-jats-pub.xml
+pandoc -F pandoc-crossref -M autoEqnLabels basic.tex -t jats_publishing -o basic-tex-jats-pub.xml
+pandoc -F pandoc-crossref -M autoEqnLabels basic.md -t jats_publishing -o basic-md-jats-pub.xml
 ```
 
 Tex to JATS Publishing:
