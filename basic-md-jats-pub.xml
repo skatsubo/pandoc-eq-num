@@ -1,28 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.2 20190208//EN"
-                  "JATS-publishing1.dtd">
-<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
-<front>
-<journal-meta>
-<journal-id></journal-id>
-<journal-title-group>
-</journal-title-group>
-<issn></issn>
-<publisher>
-<publisher-name></publisher-name>
-</publisher>
-</journal-meta>
-<article-meta>
-<permissions>
-</permissions>
-</article-meta>
-</front>
-<body>
 <p><styled-content id="eqU003Asample"><disp-formula><alternatives>
 <tex-math><![CDATA[y = F(x)\qquad{(1)}]]></tex-math>
 <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>y</mml:mi><mml:mo>=</mml:mo><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mspace width="2.0em"></mml:mspace><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></disp-formula></styled-content></p>
 <p>Ref to eq. 1.</p>
-</body>
-<back>
-</back>
-</article>
