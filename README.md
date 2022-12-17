@@ -8,7 +8,7 @@ Numbering equations with Pandoc - experiments.
 
 Convert 2 minimal samples `basic.tex` and `basic.md` to various formats and compare outputs.
 
-Note. For brewity we omit `--standalone` or `--verbose` pandoc flags.
+Note. For brevity we omit `--standalone` or `--verbose` pandoc flags.
 
 Note. This section deliberately does not cover html + mathjax.
 
